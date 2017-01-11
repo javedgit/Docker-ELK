@@ -1,0 +1,9 @@
+version: "2"
+services:
+
+  filebeat:
+    image: prima/filebeat
+    container_name: filebeat
+    volumes:
+      - ./filebeat/filebeat.yml:/filebeat.yml
+      - /home/ubuntu/logs/tomcat6-myapp-server:/var/log
