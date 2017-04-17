@@ -14,6 +14,7 @@ In a typical scenario your docker containers might not be on the same docker hos
 
 * Docker is installed [click here](http://javedmandary.blogspot.com/2017/01/install-docker-in-2-commands-on-ubuntu.html)
 * Docker-compose is [installed](https://docs.docker.com/compose/install/) 
+* Run the following command on your host "sudo sysctl -w vm.max_map_count=262144" else ElasticSearch might fail with an vm.max_map_count error check the following for [more details](https://github.com/docker-library/elasticsearch/issues/111)
 
 
 ## Setting up the ELK server
